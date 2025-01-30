@@ -1,0 +1,19 @@
+<div class="dashboard">
+    <app-sidebar></app-sidebar>
+    <div class="main-content">
+        <app-navbar></app-navbar>
+
+        <div id="welcome" class="content-welcome">
+            <div class="welcome-card">
+                <h2>Bienvenido al Sistema</h2>
+            </div>
+        </div>
+
+        <app-course-form *ngIf="selectedContent === 'courseForm'"></app-course-form>
+        <app-course-list *ngIf="selectedContent === 'courseList'"></app-course-list>
+        <app-teacher-form *ngIf="selectedContent === 'teacherForm'"></app-teacher-form>
+        <app-student-form *ngIf="selectedContent === 'studentForm'"></app-student-form>
+        <app-student-list *ngIf="selectedContent === 'studentList'"></app-student-list>
+    </div>
+</div>
+

@@ -1,0 +1,64 @@
+<div class="sidebar">
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar...">
+    </div>
+
+    <div class="menu-group">
+        <div class="menu-item" (click)="showContent('welcome')">
+            <i class="fas fa-home"></i>
+            <span>Inicio</span>
+        </div>
+    </div>
+
+    <div class="menu-group">
+        <div class="menu-title">Curso</div>
+        <div class="menu-item" (click)="showContent('courseForm')">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Registrar Curso</span>
+        </div>
+        <div class="menu-item" (click)="showContent('courseList')">
+            <i class="fas fa-list"></i>
+            <span>Lista de curso</span>
+        </div>
+    </div>
+
+    <div class="menu-group">
+        <div class="menu-title">Profesores</div>
+        <div class="menu-item" (click)="showContent('teacherForm')">
+            <i class="fas fa-user-plus"></i>
+            <span>Registrar Profesor</span>
+        </div>
+        <div class="menu-item" (click)="showContent('teacherList')">
+            <i class="fas fa-list"></i>
+            <span>Lista de Profesor</span>
+        </div>
+    </div>
+
+    <div class="menu-group">
+        <div class="menu-title">Estudiantes</div>
+        <div class="menu-item" (click)="showContent('studentForm')">
+            <i class="fas fa-user-graduate"></i>
+            <span>Registrar Estudiante</span>
+        </div>
+        <div class="menu-item" (click)="showContent('studentList')">
+            <i class="fas fa-list"></i>
+            <span>Lista de Estudiantes</span>
+        </div>
+    </div>
+
+    <div class="menu-group">
+        <div class="menu-item">
+            <i class="fas fa-clock"></i>
+            <span>Asistencia</span>
+        </div>
+    </div>
+
+    <div class="menu-group">
+        <div class="menu-item">
+            <i class="fas fa-cog"></i>
+            <span>Configuraciones avanzadas</span>
+        </div>
+    </div>
+</div>
+
